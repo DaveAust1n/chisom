@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.cont{
+    background-color: black;
+    width: 50%;
+    height: 50vh;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    
+}
+.cont:hover .box{
+     width: 400px;
+    height: 400px;
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2ms;
+    transition-timing-function: ease-in-out;
+    transform: scale(0.3)  translateY(50px) skew(20deg) rotate(90deg);
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-duration: 3s;
+}
+@keyframes bounce{
+    from{
+        left: 0;
+    }
+    to{
+       transform: translateX(200px);
+    }
+}

@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.container{
+    background-color:white;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+    grid-template-areas: "first first first second second third"
+                         "fourth fourth fifth fifth fifth third";
+}
+.item1{
+    background-color: black;
+    grid-area: first;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+.item2{ 
+    background-color: rgb(139, 133, 133);
+    grid-area: second;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.none{
+    color: rgb(90, 87, 87);
+}
+.non{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.text{
+    margin-top: 30px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+.item3{
+    background-color: black;
+    grid-area: third;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+.item4{
+    background-color: rgb(109, 106, 106);
+    grid-area: fourth;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+}
+.item5{
+    background-color: black;
+    grid-area: fifth;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
